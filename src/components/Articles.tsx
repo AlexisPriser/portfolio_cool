@@ -46,6 +46,7 @@ const NoOverflow = styled.div<{ bkgrcolor: string | undefined }>`
   overflow: hidden;
 `;
 const ArticlesWrap = styled.div`
+  min-width: 400px;
   font-family: "Arial", Times;
   text-align: center;
   /*padding-top: 5%;
@@ -63,17 +64,14 @@ const Title = styled.h1`
 const ArticlesInside = styled.div<{ collapse: boolean }>`
   background-size: cover;
   object-fit: fill;
-  border: noone;
-  //height: 354px;
-  /*width:400px;*/
+  border: none;
   width: 100%;
-  /*background-color:white;*/
 
-  //-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
   //transition: width 2s;
   height: auto;
   max-height: ${(props) => (props.collapse ? "350px" : "3000px")};
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
 `;
 
 const Collapser = styled.div`

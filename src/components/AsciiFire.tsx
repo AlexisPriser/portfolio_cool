@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import pause_svg from "../logos/pause.svg";
+import play_svg from "../logos/play.svg";
 
 const randVal = (size: number) => {
   let res = Math.floor(Math.random() * size);
@@ -88,18 +90,26 @@ const GenerateFire = (f_array: number[]) => {
 const AsciiFire = () => {
   const [fire, setFire] = useState("");
   const [fireNum, setFireNum] = useState([0]);
+  const [pause, setPause] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const res = GenerateFire(fireNum);
-      setFire(res[0] as string);
-      setFireNum(res[1] as number[]);
-    }, 1);
-    return () => clearTimeout(timer);
+    if (!pause) {
+      const timer = setTimeout(() => {
+        const res = GenerateFire(fireNum);
+        setFire(res[0] as string);
+        setFireNum(res[1] as number[]);
+      }, 1);
+      return () => clearTimeout(timer);
+    }
   });
 
+  const handleClick = () => {
+    console.log("pause", pause);
+    setPause(!pause);
+  };
+
   return (
-    <FirePlace>
+    <FirePlace onClick={handleClick}>
       <WrapFire>{fire}</WrapFire>
     </FirePlace>
   );
@@ -111,6 +121,13 @@ const FirePlace = styled.div`
   margin: 0;
   padding: 0;
   background: black;
+  position: absolute;
+`;
+
+const Pause = styled.img`
+  z-index: 3;
+  left: 0;
+  top: 0;
   position: absolute;
 `;
 

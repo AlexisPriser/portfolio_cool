@@ -53,6 +53,7 @@ const CompetencesWrap = styled.div`
   font-family: "Arial", Times;
   /*display:inline-block;*/
   overflow-x: hidden;
+  //min-width: max-content;
   width: auto;
   vertical-align: middle;
   background-color: #006666;
@@ -60,6 +61,6 @@ const CompetencesWrap = styled.div`
   text-align: center;
   word-break: break-all;
   white-space: normal;
-  padding: 5% 15%;
+  padding: 5% 0%;
   line-height: 1.64;
 `;

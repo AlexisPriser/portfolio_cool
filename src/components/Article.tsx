@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 import { ContentType } from "../data";
 import styled from "styled-components";
+import Links from "./Links";
 
 interface ArticleType {
   content: ContentType;
@@ -24,6 +25,11 @@ const Article = ({ content, i }: ArticleType) => {
         <XP_desc>
           <h4>{content.titre}</h4>
           <p>{content.description}</p>
+          {content.link && (
+            <a href={content.link.url} target="_blank">
+              {content.link.text}
+            </a>
+          )}
         </XP_desc>
       </FloatDesc>
       {/*openClose && (
@@ -55,7 +61,7 @@ const ArticleWrap = styled.div<{ i: number }>`
   }
 `;
 const FloatDesc = styled.div<{ i: number }>`
-  //width: 500px;
+  min-width: 400px;
   display: flex;
   align-items: center;
   padding: 10px;
