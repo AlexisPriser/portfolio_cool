@@ -38,6 +38,7 @@ const Profile = ({
 const ProfilWrap = styled.div`
   font-family: "Arial", Times;
   display: flex;
+  flex-wrap: wrap;
   vertical-align: middle;
   background-color: #006666;
   color: white;
@@ -51,9 +52,10 @@ const ProfilWrap = styled.div`
 
 const ProfilRow = styled.div`
   text-align: left;
-  word-break: normal;
+  word-break: auto-phrase;
   padding: 0 15px;
-  width: 33%;
+  max-width: 30%;
+  min-width: 200px;
 `;
 
 const ProfilPic = styled.img`

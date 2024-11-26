@@ -79,12 +79,13 @@ const Header = styled.div`
   width: 100%;
   white-space: nowrap;
   overflow: auto;
+  text-wrap: auto;
   font-family: "Verdana", Times;
 `;
 
 const ExpBox = styled.div`
   font-family: "Arial", Times;
-  display: inline-block;
+  //display: inline-block;
   vertical-align: middle;
 
   background-color: #009999;

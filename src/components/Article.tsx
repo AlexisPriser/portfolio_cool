@@ -16,7 +16,7 @@ const Article = ({ content, i }: ArticleType) => {
   };
   return (
     <ArticleWrap onClick={handleModal} i={i}>
-      <Picture src={content.img} width="500" height="300" />
+      <Picture src={content.img} />
       <FloatDesc i={i}>
         <XP_name>
           <h4>{content.lieu}</h4>
@@ -46,6 +46,7 @@ const Article = ({ content, i }: ArticleType) => {
 const ArticleWrap = styled.div<{ i: number }>`
   display: flex;
   flex-direction: ${(props) => (props.i % 2 ? "row" : "row-reverse")};
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px;
 
@@ -61,7 +62,7 @@ const ArticleWrap = styled.div<{ i: number }>`
   }
 `;
 const FloatDesc = styled.div<{ i: number }>`
-  min-width: 400px;
+  max-width: 400px;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -96,6 +97,8 @@ const XP_desc = styled.div`
 const Picture = styled.img`
   object-fit: contain;
   transition: all 0.5s ease-in-out;
+  max-width: 500px;
+  max-height: 300px;
 `;
 
 export default Article;

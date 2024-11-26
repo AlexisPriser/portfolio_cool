@@ -27,6 +27,7 @@ const Links = ({
 
 const LinksWrap = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 `;
 const Link = styled.a`
