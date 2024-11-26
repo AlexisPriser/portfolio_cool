@@ -133,16 +133,8 @@ const Pause = styled.img`
 
 const WrapFire = styled.pre`
   z-index: -101;
-  background-image: linear-gradient(
-    to bottom,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-  );
+
+  background-image: linear-gradient(to top, white, yellow, red, red);
   -webkit-background-clip: text;
   color: transparent;
   margin: 0;
