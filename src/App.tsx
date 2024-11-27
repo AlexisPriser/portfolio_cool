@@ -41,9 +41,11 @@ function App() {
   return (
     <div className="App">
       <CSSprops>
+        {/* 
         <Header>
           <h1>Portfolio Alexis PRISER</h1>
         </Header>
+        */}
         <NavBar data={navdata} />
         <Profile data={data.profil} ref_prop={ref_profile} />
         <Competences data={data.competences} ref_prop={ref_comp} />
