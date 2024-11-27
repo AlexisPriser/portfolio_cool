@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Article from "./Article";
 import { ContentType, ExperienceType } from "../data";
@@ -17,6 +17,11 @@ const Articles = ({
   const handleClick = () => {
     setCollapse(!collapse);
   };
+  useEffect(() => {
+    if (data.content.length == 1) {
+      setCollapse(false);
+    }
+  }, []);
 
   return (
     <NoOverflow bkgrcolor={backgroundColor}>
@@ -46,7 +51,7 @@ const NoOverflow = styled.div<{ bkgrcolor: string | undefined }>`
   overflow: hidden;
 `;
 const ArticlesWrap = styled.div`
-  min-width: 400px;
+  //min-width: 400px;
   font-family: "Arial", Times;
   text-align: center;
   /*padding-top: 5%;

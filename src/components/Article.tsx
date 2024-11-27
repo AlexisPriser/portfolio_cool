@@ -45,19 +45,35 @@ const Article = ({ content, i }: ArticleType) => {
 
 const ArticleWrap = styled.div<{ i: number }>`
   display: flex;
-  flex-direction: ${(props) => (props.i % 2 ? "row" : "row-reverse")};
-  flex-wrap: wrap;
+
   align-items: center;
   padding: 10px;
 
-  &:hover {
-    & > :nth-child(1) {
-      transform: ${(props) =>
-        props.i % 2 ? "translateX(-5%)" : "translateX(5%)"};
+  @media (min-width: 0px) {
+    flex-direction: column;
+    &:hover {
+      & > :nth-child(1) {
+        transform: ${(props) =>
+          props.i % 2 ? "translateY(-25%)" : "translateY(5%)"};
+      }
+      & > :nth-child(2) {
+        transform: ${(props) =>
+          props.i % 2 ? "translateY(-5%)" : "translateY(5%)"};
+      }
     }
-    & > :nth-child(2) {
-      transform: ${(props) =>
-        props.i % 2 ? "translateX(-5%)" : "translateX(5%)"};
+  }
+
+  @media (min-width: 900px) {
+    flex-direction: ${(props) => (props.i % 2 ? "row" : "row-reverse")};
+    &:hover {
+      & > :nth-child(1) {
+        transform: ${(props) =>
+          props.i % 2 ? "translateX(-5%)" : "translateX(5%)"};
+      }
+      & > :nth-child(2) {
+        transform: ${(props) =>
+          props.i % 2 ? "translateX(-5%)" : "translateX(5%)"};
+      }
     }
   }
 `;
@@ -71,8 +87,14 @@ const FloatDesc = styled.div<{ i: number }>`
   white-space: pre-line;
   background-color: white;
   transition: all 0.5s ease-in-out;
-  transform: ${(props) =>
-    props.i % 2 ? "translateX(-25%)" : "translateX(25%)"};
+  @media (min-width: 0px) {
+    width: 94%;
+    transform: translateY(-25%);
+  }
+  @media (min-width: 900px) {
+    transform: ${(props) =>
+      props.i % 2 ? "translateX(-25%)" : "translateX(25%)"};
+  }
 `;
 
 const XP_name = styled.div`
