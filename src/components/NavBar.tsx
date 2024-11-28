@@ -18,7 +18,7 @@ const NavBar = ({ data }: { data: NavType }) => {
 };
 
 const Spacer = styled.div`
-  height: 50px;
+  height: 100px;
   background-color: #006666;
 `;
 
