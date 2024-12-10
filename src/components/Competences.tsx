@@ -21,7 +21,7 @@ const Competences = ({
                 return (
                   <Item key={ii}>
                     <img
-                      src={ccont.img}
+                      src={ccont.img.src}
                       alt={ccont.titre}
                       width="100px"
                       height="100px"

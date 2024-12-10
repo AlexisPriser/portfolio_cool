@@ -27,7 +27,7 @@ const Articles = ({
     <NoOverflow bkgrcolor={backgroundColor}>
       <ArticlesWrap ref={ref_prop}>
         <Title>{data.titre}</Title>
-        <ArticlesInside collapse={collapse}>
+        <ArticlesInside collapse={collapse.toString()}>
           {data.content.map((cont: ContentType, i: number) => {
             return <Article content={cont} i={i} key={i} />;
           })}
@@ -66,7 +66,7 @@ const Title = styled.h1`
   color: white;
 `;
 
-const ArticlesInside = styled.div<{ collapse: boolean }>`
+const ArticlesInside = styled.div<{ collapse: string }>`
   background-size: cover;
   object-fit: fill;
   border: none;
@@ -74,7 +74,7 @@ const ArticlesInside = styled.div<{ collapse: boolean }>`
 
   //transition: width 2s;
   height: auto;
-  max-height: ${(props) => (props.collapse ? "350px" : "3000px")};
+  max-height: ${(props) => (props.collapse == "true" ? "350px" : "3000px")};
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
 `;

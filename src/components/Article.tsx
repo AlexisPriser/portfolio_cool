@@ -16,7 +16,7 @@ const Article = ({ content, i }: ArticleType) => {
   };
   return (
     <ArticleWrap onClick={handleModal} i={i}>
-      <Picture src={content.img} />
+      <Picture src={content.img.src} />
       <FloatDesc i={i}>
         <XP_name>
           <h4>{content.lieu}</h4>
