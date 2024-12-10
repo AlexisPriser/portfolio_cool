@@ -12,10 +12,15 @@ const Links = ({
 }) => {
   return (
     <LinksWrap ref={ref_prop}>
-      {data.map((cont: LinksType) => {
+      {data.map((cont: LinksType, i: number) => {
         return (
-          <Link href={cont.link} target="_blank">
-            <img src={cont.img} alt={cont.titre} width="100px" height="100px" />
+          <Link key={i} href={cont.link} target="_blank">
+            <img
+              src={cont.img.src}
+              alt={cont.titre}
+              width="100px"
+              height="100px"
+            />
             {/*<h2>{cont.titre}</h2>*/}
           </Link>
         );

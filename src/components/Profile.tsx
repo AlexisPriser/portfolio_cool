@@ -18,7 +18,7 @@ const Profile = ({
         <p style={{ whiteSpace: "pre-line" }}>{data.resume.description}</p>
       </ProfilRow>
       <ProfilRow>
-        <ProfilPic src={profil_pic} />
+        <ProfilPic src={profil_pic.src} />
       </ProfilRow>
       <ProfilRow>
         <h3>{data.details.titre}</h3>
