@@ -142,7 +142,7 @@ const data = {
         {
           lieu: "Capgemini",
           duree: "Juin 2022 - novembre 2024",
-          titre: " Junior consultant & engineer",
+          titre: "  Associate Prod Softw Engineer",
           img: capgemini_img,
           description: `Missions interne :
               -Enseignement complet de React et Typescript à une equipe de dev.
