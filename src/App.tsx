@@ -10,8 +10,10 @@ import Competences from "./components/Competences";
 import Links from "./components/Links";
 import { generateColor } from "./functions/hexGenerator";
 import { getColour } from "./functions/gradientGenerator";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Cypher from "./components/Bonus/Cypher";
 
-function App() {
+function Base() {
   const ref_profile = useRef();
   const ref_etd = useRef();
   const ref_pro = useRef();
@@ -63,8 +65,20 @@ function App() {
         </ExpBox>
         <Links data={data.liens} ref_prop={ref_links} />
       </CSSprops>
+
       {/*<AsciiFire />*/}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" Component={Base} />
+        <Route path="/cypher" Component={Cypher} />
+      </Routes>
+    </Router>
   );
 }
 

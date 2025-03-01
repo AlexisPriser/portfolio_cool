@@ -2,6 +2,7 @@ import React from "react";
 import { NavType } from "../data";
 import styled from "styled-components";
 import NavButton from "./NavButton";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ data }: { data: NavType }) => {
   const _data = Object.entries(data);
@@ -11,12 +12,23 @@ const NavBar = ({ data }: { data: NavType }) => {
         {_data.map(([k, v], i: number) => {
           return <NavButton _ref={v} name={k} key={i} />;
         })}
+        <Link to={"/cypher"}>
+          <SquareLink>?</SquareLink>
+        </Link>
       </NavBarWrap>
       <Spacer />
     </>
   );
 };
 
+const SquareLink = styled.a`
+  display: inline-block;
+  margin: 1%;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  color: white;
+`;
 const Spacer = styled.div`
   height: 100px;
   background-color: #006666;
