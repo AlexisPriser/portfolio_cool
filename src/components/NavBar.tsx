@@ -23,6 +23,7 @@ const NavBar = ({ data }: { data: NavType }) => {
 
 const SquareLink = styled.a`
   display: inline-block;
+  float: right;
   margin: 1%;
   border: 2px solid white;
   width: 20px;
