@@ -10,7 +10,7 @@ import Competences from "./components/Competences";
 import Links from "./components/Links";
 import { generateColor } from "./functions/hexGenerator";
 import { getColour } from "./functions/gradientGenerator";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Cypher from "./components/Bonus/Cypher";
 
 function Base() {

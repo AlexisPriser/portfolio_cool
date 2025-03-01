@@ -41,7 +41,7 @@ const NavBarWrap = styled.div`
   //height: 2%;
   width: 100%;
   overflow: hidden;
-  background-color: #222;
+  background-color: #333;
   display: block;
   text-align: center;
   position: fixed;
