@@ -3,18 +3,23 @@ import { NavType } from "../data";
 import styled from "styled-components";
 import NavButton from "./NavButton";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 
 const NavBar = ({ data }: { data: NavType }) => {
   const _data = Object.entries(data);
+  const pause = useSelector((state: RootState) => state.flip.value);
   return (
     <>
       <NavBarWrap>
         {_data.map(([k, v], i: number) => {
           return <NavButton _ref={v} name={k} key={i} />;
         })}
-        <Link to={"/cypher"}>
-          <SquareLink>?</SquareLink>
-        </Link>
+        {pause && (
+          <Link to={"/cypher"}>
+            <SquareLink>?</SquareLink>
+          </Link>
+        )}
       </NavBarWrap>
       <Spacer />
     </>

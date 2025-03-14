@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import pause_svg from "../logos/pause.svg";
-import play_svg from "../logos/play.svg";
+import { useSelector, useDispatch } from "react-redux";
+import { flip } from "../FlipSlice";
+import flipSlice from "../FlipSlice";
+import { RootState } from "../store";
 
 const randVal = (size: number) => {
   let res = Math.floor(Math.random() * size);
@@ -90,7 +92,9 @@ const GenerateFire = (f_array: number[]) => {
 const AsciiFire = () => {
   const [fire, setFire] = useState("");
   const [fireNum, setFireNum] = useState([0]);
-  const [pause, setPause] = useState(false);
+
+  const pause = useSelector((state: RootState) => state.flip.value);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!pause) {
@@ -104,8 +108,9 @@ const AsciiFire = () => {
   });
 
   const handleClick = () => {
-    console.log("pause", pause);
-    setPause(!pause);
+    //console.log("pause", pause);
+    //setPause(!pause);
+    dispatch(flip());
   };
 
   return (
