@@ -53,11 +53,16 @@ function Base() {
         <Competences data={data.competences} ref_prop={ref_comp} />
         <ExpBox>
           {data.experiences.map((cont: ExperienceType, i: number) => {
+            let next_color = "#000000";
+            if (i <= data.experiences.length - 2 && colors) {
+              next_color = colors[i + 1];
+            }
             return (
               <Articles
                 data={cont}
                 ref_prop={navdata[cont.titre]}
                 backgroundColor={colors && colors[i]}
+                nextBackgroundColor={next_color}
                 key={i}
               />
             );

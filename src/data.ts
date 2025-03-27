@@ -57,6 +57,7 @@ export interface ExperienceType {
 export interface ProfilType {
   resume: { titre: string; description: string };
   details: { titre: string; content: Record<string, string> };
+  wordTrain: string[];
 }
 
 export interface ContCompType {
@@ -102,11 +103,31 @@ const data = {
       content: {
         Nom: "Alexis PRISER",
         Age: curr_age + " ans",
-        Lieu: "29 de brie\n78310 Maurepas",
+        Lieu: "29 de brie, 78310 Maurepas",
         Tél: "06 81 99 17 39",
         Mail: "priseralexis78@gmail.com",
       },
     },
+    wordTrain: [
+      "dev",
+      "web",
+      "curieux",
+      "créatif",
+      "react",
+      "typescript",
+      "game maker",
+      "passionné",
+      "organisé",
+      "persévérant",
+      "jeux vidéos",
+      "logiciels",
+      "effets visuels",
+      "programme",
+      "dessine",
+      "compose",
+      "optimise",
+      "planifie",
+    ],
   },
   competences: [
     {

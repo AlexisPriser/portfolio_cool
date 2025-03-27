@@ -8,10 +8,12 @@ const Articles = ({
   data,
   ref_prop,
   backgroundColor,
+  nextBackgroundColor,
 }: {
   data: ExperienceType;
   ref_prop: React.LegacyRef<any>;
   backgroundColor?: string | undefined;
+  nextBackgroundColor: string;
 }) => {
   const [collapse, setCollapse] = useState(true);
   const handleClick = () => {
@@ -35,8 +37,10 @@ const Articles = ({
       </ArticlesWrap>
       {data.content.length > 1 && (
         <Collapser onClick={handleClick}>
-          ::before
-          <h2>{collapse ? "expand" : "close"}</h2>
+          <CollapserText bkgrcolor={nextBackgroundColor}>
+            <h2>{collapse ? "expand" : "close"}</h2>
+          </CollapserText>
+          <CollapserBackground />
         </Collapser>
       )}
     </NoOverflow>
@@ -78,10 +82,12 @@ const ArticlesInside = styled.div<{ collapse: boolean }>`
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
 `;
-
 const Collapser = styled.div`
+  position: relative;
+`;
+const CollapserBackground = styled.div`
   height: 100px;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   -webkit-mask-image: -webkit-gradient(
     linear,
@@ -90,12 +96,24 @@ const Collapser = styled.div`
     from(rgba(0, 0, 0, 1)),
     to(rgba(0, 0, 0, 0))
   );
+`;
+
+const CollapserText = styled.div<{ bkgrcolor: string }>`
+  @media (min-width: 0px) {
+    height: 50px;
+  }
+  @media (min-width: 900px) {
+    height: 100px;
+  }
+  width: 50vw;
+  align-content: center;
+  right: 0;
+  bottom: 0;
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
-
-  h2 {
-    color: black;
-    position: relative; //missed
-    z-index: 2;
-  }
+  color: white;
+  position: absolute; //missed
+  z-index: 1;
+  background-color: ${(props) =>
+    props.bkgrcolor ? props.bkgrcolor : "#000000"};
 `;
