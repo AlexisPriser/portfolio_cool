@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { RefObject, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { flip } from "../FlipSlice";
@@ -89,15 +89,36 @@ const GenerateFire = (f_array: number[]) => {
   return [fireString, firePixelArray];
 };
 
+function useIsVisible(ref: RefObject<HTMLInputElement>) {
+  const [isIntersecting, setIntersecting] = useState(false);
+
+  useEffect(() => {
+    if (ref.current) {
+      const observer = new IntersectionObserver(([entry]) =>
+        setIntersecting(entry.isIntersecting)
+      );
+
+      observer.observe(ref.current);
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, [ref]);
+
+  return isIntersecting;
+}
+
 const AsciiFire = () => {
   const [fire, setFire] = useState("");
   const [fireNum, setFireNum] = useState([0]);
 
   const pause = useSelector((state: RootState) => state.flip.value);
   const dispatch = useDispatch();
+  const ref = React.useRef<HTMLInputElement>(null);
+  const isVisible = useIsVisible(ref);
 
   useEffect(() => {
-    if (!pause) {
+    if (!pause && isVisible) {
       const timer = setTimeout(() => {
         const res = GenerateFire(fireNum);
         setFire(res[0] as string);
@@ -114,7 +135,7 @@ const AsciiFire = () => {
   };
 
   return (
-    <FirePlace onClick={handleClick}>
+    <FirePlace ref={ref} onClick={handleClick}>
       <WrapFire>{fire}</WrapFire>
     </FirePlace>
   );
