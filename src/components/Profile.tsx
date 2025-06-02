@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfilType } from "../data";
 import styled from "styled-components";
-import profil_pic from "../images/profil_pic.jpg";
+import profil_pic from "../images/profile_v3.jpg";
 import WordTrain from "./WordTrain";
 
 const Profile = ({
@@ -21,7 +21,7 @@ const Profile = ({
           <p style={{ whiteSpace: "pre-line" }}>{data.resume.description}</p>
         </ProfilRow>
         <ProfilRow>
-          <ProfilPic src={profil_pic} />
+          <ProfilPic src={profil_pic} width="280" />
         </ProfilRow>
         <ProfilRow>
           <h3>{data.details.titre}</h3>

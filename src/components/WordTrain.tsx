@@ -55,7 +55,7 @@ const WordTrain = ({ words, speed }: { words: string[]; speed: number }) => {
     gsap.set(thirdText.current, { xPercent: xPercent });
     xPercent += 0.1 * direction;
     requestAnimationFrame(animation);
-    console.log(xPercent);
+    //console.log(xPercent);
   };
   const [shuff, setShuff] = useState(shuffle(words).join(" ") + " ");
 
