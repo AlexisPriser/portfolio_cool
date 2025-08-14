@@ -91,7 +91,7 @@ const curr_age = _calculateAge(new Date("Feb 23, 1997"));
 const data = {
   profil: {
     resume: {
-      titre: "A mon propo",
+      titre: "A mon propos",
       description: `Fort de mon expérience en développement, j’élabore des feuilles de route techniques claires et innovantes.
 Polyvalent, je conçois des projets web, mobiles et logiciels sur toute la chaîne de valeur.
 Rigoureux, j’optimise en continu et veille aux dernières tendances pour livrer des solutions performantes.

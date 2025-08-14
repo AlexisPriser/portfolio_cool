@@ -9,7 +9,7 @@ import { getColour } from "./functions/gradientGenerator";
 import styled from "styled-components";
 
 function Base() {
-  const ref_profile = useRef();
+  const ref_profil = useRef();
   const ref_etd = useRef();
   const ref_pro = useRef();
   const ref_comp = useRef();
@@ -17,7 +17,7 @@ function Base() {
   const ref_links = useRef();
 
   const navdata = {
-    Profile: ref_profile,
+    Profil: ref_profil,
     Competences: ref_comp,
     Professionnel: ref_pro,
     Projets: ref_proj,
@@ -44,7 +44,7 @@ function Base() {
         </Header>
         */}
         <NavBar data={navdata} />
-        <Profile data={data.profil} ref_prop={ref_profile} />
+        <Profile data={data.profil} ref_prop={ref_profil} />
         <Competences data={data.competences} ref_prop={ref_comp} />
         <ExpBox>
           {data.experiences.map((cont: ExperienceType, i: number) => {
