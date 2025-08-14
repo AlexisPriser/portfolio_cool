@@ -92,18 +92,17 @@ const data = {
   profil: {
     resume: {
       titre: "A mon propo",
-      description: `Fort de mon Experience chez Capgemini, je suis un développeur passionné par la programmation.
-    Curieux, je suis en recherche permanente de solutions innovantes.
-    J'aime quand le code soit bien organisé et optimisé pour faire grandir les projets.
-    Travailler en équipe, échanger, développer, sont des moteurs qui me permettent de m'investir dans mes missions.
-    `,
+      description: `Fort de mon expérience en développement web et applicatif, j'élabore des feuilles de route techniques claires et efficaces en lien avec chefs de projet et équipes métiers.
+Polyvalent, je conçois et développe des projets variés (web, mobile, API, logiciels) sur toute la chaîne de valeur, en maîtrisant aussi bien les langages classiques (HTML, CSS, JavaScript, Python…) que les frameworks modernes (React, NodeJS…).
+Rigoureux et orienté optimisation continue, j'applique une méthodologie agile, réalise des tests réguliers et documente chaque évolution.
+Curieux et force de proposition, je veille aux dernières tendances technologiques pour améliorer la qualité, la performance et la robustesse des solutions livrées.`,
     },
     details: {
       titre: "Détails",
       content: {
         Nom: "Alexis PRISER",
         Age: curr_age + " ans",
-        Lieu: "29 de brie, 78310 Maurepas",
+        Lieu: "78310 Maurepas",
         Tél: "06 81 99 17 39",
         Mail: "priseralexis78@gmail.com",
       },
@@ -167,10 +166,10 @@ const data = {
           img: capgemini_img,
           description: `Missions interne :
               -Enseignement complet de React et Typescript à une equipe de dev.
-              -Developpement en React, Ionic et Python d’une application telephone pour trajets sur la route.
+              -Developpement en React, Ionic et Python d'une application telephone pour trajets sur la route.
             Missions dev front-end chez des clients :
-              -Dassault Aviation. Developpement d’IHM en React et migration de Javascript à Typescript.
-              -Safran Tech. Developpement d’IHM en React et python.`,
+              -Dassault Aviation (2 mois) : Développement de l'application en React et migration de Javascript à Typescript.
+              -Safran Tech (17 mois) : Développement de l'application en React. Développement de fonctionnalités back-end en Python.`,
         },
         {
           lieu: "Ownsport",
