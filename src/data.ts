@@ -164,12 +164,13 @@ Travailler en équipe et partager mes idées est un moteur dans chacune de mes m
           duree: "Juin 2022 - novembre 2024",
           titre: "  Associate Prod Softw Engineer",
           img: capgemini_img,
-          description: `Missions interne :
-              -Enseignement complet de React et Typescript à une equipe de dev.
-              -Developpement en React, Ionic et Python d'une application telephone pour trajets sur la route.
-            Missions dev front-end chez des clients :
-              -Dassault Aviation (2 mois) : Développement de l'application en React et migration de Javascript à Typescript.
-              -Safran Tech (17 mois) : Développement de l'application en React. Développement de fonctionnalités back-end en Python.`,
+          description: `Missions dev Fullstack chez des clients :
+-Safran Tech (17 mois) : Développement de l’application en React. Développement de fonctionnalités back-end en Python.
+-Dassault Aviation (2 mois) : Développement de l’application en React et migration de Javascript à Typescript.
+Missions internes (7 mois) :
+-Enseignement complet de React et Typescript à une équipe de dev.
+-développement en React, Ionic et Python d’une Application téléphone pour trajets sur la route.
+`,
         },
         {
           lieu: "Ownsport",
