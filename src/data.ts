@@ -92,10 +92,10 @@ const data = {
   profil: {
     resume: {
       titre: "A mon propo",
-      description: `Fort de mon expérience en développement web et applicatif, j'élabore des feuilles de route techniques claires et efficaces en lien avec chefs de projet et équipes métiers.
-Polyvalent, je conçois et développe des projets variés (web, mobile, API, logiciels) sur toute la chaîne de valeur, en maîtrisant aussi bien les langages classiques (HTML, CSS, JavaScript, Python…) que les frameworks modernes (React, NodeJS…).
-Rigoureux et orienté optimisation continue, j'applique une méthodologie agile, réalise des tests réguliers et documente chaque évolution.
-Curieux et force de proposition, je veille aux dernières tendances technologiques pour améliorer la qualité, la performance et la robustesse des solutions livrées.`,
+      description: `Fort de mon expérience en développement, j’élabore des feuilles de route techniques claires et innovantes.
+Polyvalent, je conçois des projets web, mobiles et logiciels sur toute la chaîne de valeur.
+Rigoureux, j’optimise en continu et veille aux dernières tendances pour livrer des solutions performantes.
+Travailler en équipe et partager mes idées est un moteur dans chacune de mes missions.`,
     },
     details: {
       titre: "Détails",
