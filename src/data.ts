@@ -33,9 +33,6 @@ import ownsport_img from "./images/ownsport.png";
 
 import cv_pdf from "./download/CV_Alexis_PRISER.pdf";
 
-import { DefaultSerializer } from "v8";
-import { useRef } from "react";
-
 export interface ContentType {
   lieu?: string;
   duree?: string;
@@ -162,7 +159,7 @@ Travailler en équipe et partager mes idées est un moteur dans chacune de mes m
         {
           lieu: "Capgemini",
           duree: "Juin 2022 - novembre 2024",
-          titre: "  Associate Prod Softw Engineer",
+          titre: "  Développeur Fullstack",
           img: capgemini_img,
           description: `Missions dev Fullstack chez des clients :
 -Safran Tech (17 mois) : Développement de l’application en React. Développement de fonctionnalités back-end en Python.
@@ -175,15 +172,15 @@ Missions internes (7 mois) :
         {
           lieu: "Ownsport",
           duree: "octobre 2020 - septembre 2021",
-          titre: "Développeur Fullstack (alternance)",
+          titre: "Développeur Fullstack",
           img: ownsport_img,
-          description: `En tant qu'alternant, je travaillais avec une équipe sur un projet visant à adapter un logiciel Java en interface web. 
+          description: `J'ai travaillé avec une équipe sur un projet visant à adapter un logiciel Java en interface web. 
             Utilisant React et NodeJs, j'ai développé la partie front et une partie du back-end.`,
         },
         {
           lieu: "Centre Hospitalier de Rambouillet",
           duree: "mai 2017 - juillet 2017",
-          titre: "Développeur Front-End (stage)",
+          titre: "Ux Designer / Développeur Web",
           img: chu_ramb_img,
           description: `A la fin de ma première année de BTS, j'ai fait stage de 6 semaines où j'ai réparé le site web de l’hôpital, analysé sa structure et reconstruit celle-ci via deux CMS (joomla et wordpress).`,
         },
