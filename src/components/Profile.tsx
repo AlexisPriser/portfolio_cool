@@ -58,7 +58,7 @@ const ProfilWrap = styled.div`
 
 const ProfilRow = styled.div`
   text-align: left;
-  word-break: auto-phrase;
+  word-break: normal;
   padding: 0 15px;
   max-width: 30%;
   min-width: 200px;
