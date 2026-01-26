@@ -92,7 +92,7 @@ const data = {
       description: `Fort de mon expérience en développement, j’élabore des feuilles de route techniques claires et innovantes.
 Polyvalent, je conçois des projets web, mobiles et logiciels sur toute la chaîne de valeur.
 Rigoureux, j’optimise en continu et veille aux dernières tendances pour livrer des solutions performantes.
-Travailler en équipe et partager mes idées est un moteur dans chacune de mes missions.`,
+Travailler en équipe et partager mes idées sont les moteur dans chacune de mes missions.`,
     },
     details: {
       titre: "Détails",
@@ -161,11 +161,11 @@ Travailler en équipe et partager mes idées est un moteur dans chacune de mes m
           duree: "Juin 2022 - novembre 2024",
           titre: "  Développeur Fullstack",
           img: capgemini_img,
-          description: `Missions dev Fullstack chez des clients :
--Safran Tech (17 mois) : Développement de l’application en React. Développement de fonctionnalités back-end en Python.
--Dassault Aviation (2 mois) : Développement de l’application en React et migration de Javascript à Typescript.
-Missions internes (7 mois) :
--Enseignement complet de React et Typescript à une équipe de dev.
+          description: `Missions dev Fullstack chez des clients :
+-Safran Tech : Développement de l’application en React. Développement de fonctionnalités back-end en Python.
+-Dassault Aviation : Développement de l’application en React et migration de Javascript à Typescript.
+Inter contrat :
+-Formateur en React et Typescript à une équipe de dev.
 -développement en React, Ionic et Python d’une Application téléphone pour trajets sur la route.
 `,
         },
@@ -191,7 +191,7 @@ Missions internes (7 mois) :
       content: [
         {
           titre: "NetherEscape",
-          description: `Ce projet conciste à créer un jeu video sur GameMaker en se basant sur NuclearThrone: un rogue-like en vue du dessus, où il faut tirer sur tout se qui bouge pour progresser dans des niveaux hostiles générés aléatoirement.
+          description: `Ce projet consiste à créer un jeu vidéo sur GameMaker en se basant sur NuclearThrone: un rogue-like en vue du dessus, où il faut tirer sur tout ce qui bouge pour progresser dans des niveaux hostiles générés aléatoirement.
             Mon jeu est toujours en développement, vous pourrez trouver le lien de téléchargement sur ma page itch.io`,
           img: nether_escape_img,
           link: {
@@ -209,8 +209,8 @@ Missions internes (7 mois) :
           duree: "2020 - 2021",
           titre: "Bachelor Concepteur Développeur D'Applications",
           img: imie_img,
-          description: `Ayant suivi cette formation en alternance afin d'aquerir de l'experience dans le domaine des projets de développement informatique en entreprise.
-          Pour valider mon année j'ai fais cette alternance en travaillant en tant que développeur fullstack dans l'entreprise Ownsport.`,
+          description: `Ayant suivi cette formation en alternance afin d'acquérir de l'expérience dans le domaine des projets de développement informatique en entreprise.
+          Pour valider mon année j'ai fait cette alternance en travaillant en tant que développeur fullstack dans l'entreprise Ownsport.`,
         },
         {
           lieu: "Lycée Agora",
@@ -218,7 +218,7 @@ Missions internes (7 mois) :
           titre: "BTS Sytèmes Numériques Informatiques et Réseaux",
           img: lycee_agora_img,
           description: `Pendant ma première année j'ai appris les différents langages de programmation web(HTML,CSS,PHP,SQL) ainsi que le langage C, la manipulation et création de réseaux locaux.
-            Ma seconde année m'a initié au langages orientés objets tel que le Java et le C++.
+            Ma seconde année m'a initié aux langages orientés objets tel que Java et C++.
             J'ai d'ailleurs programmé en Java une application Android de géolocalisation dans le contexte d'un musée.`,
         },
         {
