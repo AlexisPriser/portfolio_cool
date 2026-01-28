@@ -182,7 +182,7 @@ Inter contrat :
           duree: "mai 2017 - juillet 2017",
           titre: "Ux Designer / Développeur Web",
           img: chu_ramb_img,
-          description: `A la fin de ma première année de BTS, j'ai fait stage de 6 semaines où j'ai réparé le site web de l’hôpital, analysé sa structure et reconstruit celle-ci via deux CMS (joomla et wordpress).`,
+          description: `A la fin de ma première année de BTS, j'ai fait un stage de 6 semaines où j'ai réparé le site web de l’hôpital, analysé sa structure et reconstruit celle-ci via deux CMS (joomla et wordpress).`,
         },
       ],
     },
