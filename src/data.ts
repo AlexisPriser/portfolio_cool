@@ -158,7 +158,7 @@ Travailler en équipe et partager mes idées sont les moteur dans chacune de mes
       content: [
         {
           lieu: "Capgemini",
-          duree: "Juin 2022 - novembre 2024",
+          duree: "Juin 2021 - novembre 2025",
           titre: "  Développeur Fullstack",
           img: capgemini_img,
           description: `Missions dev Fullstack chez des clients :
