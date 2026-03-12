@@ -31,7 +31,7 @@ import lycee_ramb_img from "./images/lycee_ramb.jpg";
 import safran_img from "./images/safran_tech.jpg";
 import ownsport_img from "./images/ownsport.png";
 
-import cv_pdf from "./download/CV_Alexis_PRISER.pdf";
+import cv_pdf from "./download/CV_Alexis_Priser.pdf";
 
 export interface ContentType {
   lieu?: string;
@@ -158,7 +158,7 @@ Travailler en équipe et partager mes idées sont les moteur dans chacune de mes
       content: [
         {
           lieu: "Capgemini",
-          duree: "Juin 2021 - novembre 2025",
+          duree: "Juin 2022 - novembre 2025",
           titre: "  Développeur Fullstack",
           img: capgemini_img,
           description: `Missions dev Fullstack chez des clients :
